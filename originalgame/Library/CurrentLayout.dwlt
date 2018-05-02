@@ -369,14 +369,14 @@ MonoBehaviour:
     height: 281
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 4453.613282685322
+  lastFramingTime: 3858.533116391031
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.60845035, y: 4.2492747, z: -8.668106}
+    m_Target: {x: -0.9358813, y: 0.35127854, z: -5.9396906}
     speed: 2
-    m_Value: {x: 0.60845035, y: 4.2492747, z: -8.668106}
+    m_Value: {x: -0.9358813, y: 0.35127854, z: -5.9396906}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -400,13 +400,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.19376573, y: 0.0029431384, z: -0.0005812991, w: 0.9810433}
+    m_Target: {x: 0.14575425, y: -0.097772345, z: 0.014476996, w: 0.98437226}
     speed: 2
-    m_Value: {x: -0.19376573, y: -0.0029431384, z: 0.0005812991, w: -0.98104334}
+    m_Value: {x: 0.14575411, y: -0.09777225, z: 0.014476982, w: 0.9843713}
   m_Size:
-    m_Target: 13.371117
+    m_Target: 8.677566
     speed: 2
-    m_Value: 13.371117
+    m_Value: 8.677566
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -519,23 +519,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6a010000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 9efbffff00000000
+    m_SelectedIDs: 7e2c0000
+    m_LastClickedID: 11390
+    m_ExpandedIDs: ea78fdffc4b0ffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: stage
+      m_OriginalName: stage
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10284
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -582,13 +582,12 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders:
-    - Assets
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Owner\Desktop\own game
+  m_LastProjectPath: C:\Users\Owner\Desktop\originalgame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
@@ -622,21 +621,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 78270000
+    m_ExpandedIDs: 0000000078270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: MeterScripts
+      m_OriginalName: MeterScripts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 11484
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
