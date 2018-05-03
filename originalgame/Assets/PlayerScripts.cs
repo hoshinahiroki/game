@@ -14,7 +14,7 @@ public class PlayerScripts : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-		rbball = rbball.GetComponent<Rigidbody> ();
+		rbball = GetComponent<Rigidbody> ();
 	}
 	
 	// Update is called once per frame
@@ -33,12 +33,12 @@ public class PlayerScripts : MonoBehaviour
 		{
 			return;
 		}
-		ballVec =(clickend - clickstart);
+		ballVec =(clickstart - clickend);
 		ballVec.z = ballVec.y;
-		ballVec.y = 10;
+		ballVec.y = 0;
 		ballVec.Normalize();
 
 		rbball.AddForce (ballVec * power);
-		
-	}
+		}
+	//public void power(float power){}
 }
