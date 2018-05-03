@@ -17,13 +17,13 @@ public class MeterScripts : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButton (0)) {
-			rt.sizeDelta = new Vector2 (rt.sizeDelta.x + 4.0f, 50.0f);
+			rt.sizeDelta = new Vector2 (rt.sizeDelta.x + 20.0f, 50.0f);
 			if (rt.sizeDelta.x >= 300) {
 				rt.sizeDelta = new Vector2 (0.0f, 50.0f);
 			}
 		}
-		if (Input.GetMouseButton (0)) {
-			playerScripts.SendMessage ("power", rt.sizeDelta.x * 2.5);
+		if (Input.GetMouseButtonUp (0)) {
+			playerScripts.SendMessage ("Power", rt.sizeDelta.x * 5);
 			rt.sizeDelta = new Vector2 (0.0f, 50.0f);
 		}
 	}

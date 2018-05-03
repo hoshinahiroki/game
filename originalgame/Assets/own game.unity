@@ -394,7 +394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 539223980}
-  power: 50
 --- !u!1 &641777225
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +724,7 @@ GameObject:
   - component: {fileID: 1398379902}
   - component: {fileID: 1398379905}
   - component: {fileID: 1398379904}
+  - component: {fileID: 1398379903}
   m_Layer: 5
   m_Name: bar
   m_TagString: Untagged
@@ -750,6 +750,18 @@ RectTransform:
   m_AnchoredPosition: {x: -1500, y: -550}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1398379903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1398379901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ee7a64685c9ae45aa24f7f8184d5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScripts: {fileID: 539223987}
 --- !u!114 &1398379904
 MonoBehaviour:
   m_ObjectHideFlags: 0

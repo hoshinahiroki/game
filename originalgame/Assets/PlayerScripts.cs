@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerScripts : MonoBehaviour 
 {
 	public GameObject ball;
-	public float power;
 
 	Rigidbody rbball;
 	Vector3 ballVec;
@@ -34,11 +33,14 @@ public class PlayerScripts : MonoBehaviour
 			return;
 		}
 		ballVec =(clickstart - clickend);
-		ballVec.z = ballVec.y;
-		ballVec.y = 0;
+	    ballVec.z = ballVec.y;
+		ballVec.y = 100;
 		ballVec.Normalize();
-
-		rbball.AddForce (ballVec * power);
+	}
+	public void Power(float power){
+		if (Input.GetMouseButtonUp (0)) {
+			rbball.AddForce (ballVec * power);
 		}
-	//public void power(float power){}
+		
+	}
 }
