@@ -5,11 +5,10 @@ using UnityEngine;
 public class PlayerScripts : MonoBehaviour 
 {
 	public GameObject ball;
-
 	Rigidbody rbball;
 	Vector3 ballVec;
 
-	Vector3 clickstart, clickend;
+	Vector3 click;
 
 	// Use this for initialization
 	void Start () {
@@ -18,23 +17,20 @@ public class PlayerScripts : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) 
-		{
-			clickstart = Input.mousePosition;
-			Debug.Log ("clickstart(" + clickstart);
+		if (Input.GetMouseButtonDown (0)) {
+			Ray ray = new Ray ();
+			RaycastHit hit = new RaycastHit ();
+			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			//clickPosDown = Input.mousePosition;
+
+			if (Physics.Raycast (ray, out hit, Mathf.Infinity)) {
+				if (hit.collider.gameObject.CompareTag ("wall")) { 
+					click = Input.mousePosition; 
+					Debug.Log ("click(" + click);//flagBがないと下のifが働かない
+				}
+			}
 		}
-		if (Input.GetMouseButtonUp (0)) 
-		{
-			clickend = Input.mousePosition;
-			Debug.Log ("clickend(" + clickend);
-		}
-		if(clickstart == clickend)
-		{
-			return;
-		}
-		ballVec =(clickstart - clickend);
-		ballVec.z = ballVec.y;
-	    ballVec.y = 0;
+		ballVec = (click-rbball.transform.position);
 		ballVec.Normalize();
 	}
 	public void Power(float power){
