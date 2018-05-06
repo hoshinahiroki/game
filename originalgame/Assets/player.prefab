@@ -112,6 +112,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1287680004633100}
+  wall:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!135 &135558511996156830
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovementScripts : MonoBehaviour {
 
-	float speed = 0.01f;
+	float speed = 0.05f;
 	// Use this for initialization
 	void Start () {
 		
