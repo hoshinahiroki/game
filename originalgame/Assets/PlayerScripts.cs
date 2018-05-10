@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerScripts : MonoBehaviour 
 {
+	
 	public GameObject ball;
 	Rigidbody rbball;
 	Vector3 ballVec;
@@ -42,6 +43,5 @@ public class PlayerScripts : MonoBehaviour
 			rbball.AddForce (ballVec * power*3);
 		}
 		Destroy (ball, 5);
-		
 	}
 }

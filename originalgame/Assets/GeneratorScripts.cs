@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class GeneratorScripts : MonoBehaviour {
+	
 	public GameObject BallPrefab;
 	int interval = 5;
 	// Use this for initialization

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - wall
   - can
+  - sikiri
   layers:
   - Default
   - TransparentFX

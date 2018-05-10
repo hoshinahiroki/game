@@ -13,6 +13,7 @@ public class MeterScripts : MonoBehaviour {
 		rt = GetComponent<RectTransform> ();
 		
 	}
+		
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,6 +26,6 @@ public class MeterScripts : MonoBehaviour {
 		if (Input.GetMouseButtonUp (0)) {
 			playerScripts.SendMessage ("Power", rt.sizeDelta.x * 5);
 			rt.sizeDelta = new Vector2 (0.0f, 50.0f);
-		}
 	}
+}
 }
