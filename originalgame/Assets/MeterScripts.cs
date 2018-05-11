@@ -28,4 +28,8 @@ public class MeterScripts : MonoBehaviour {
 			rt.sizeDelta = new Vector2 (0.0f, 50.0f);
 	}
 }
+	public void GetPlayerScripts(GameObject ball){
+		playerScripts = ball.GetComponent<PlayerScripts> ();
+	}
+
 }

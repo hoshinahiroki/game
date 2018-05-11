@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class MovementScripts : MonoBehaviour {
 
-	float speed = 0.1f;
+	float speed = 0.5f;
 	// Use this for initialization
 	void Start () {
-		
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position += new Vector3 (speed * 6*Time.deltaTime,0,0);
+		transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
 	}
 }
