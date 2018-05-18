@@ -21,7 +21,7 @@ public class MeterScripts : MonoBehaviour {
 		//クリック中のうごきについて
 		if (Input.GetMouseButton (0)) {
 			//左端から、毎フレームWidthを20ずつ増やす、Hightは50に固定
-			rt.sizeDelta = new Vector2 (rt.sizeDelta.x + 20.0f, 50.0f);
+			rt.sizeDelta = new Vector2 (rt.sizeDelta.x + 5.0f, 50.0f);
 			//Widthが300を超えたら0に戻る
 			if (rt.sizeDelta.x >= 300) {
 				rt.sizeDelta = new Vector2 (0.0f, 50.0f);
